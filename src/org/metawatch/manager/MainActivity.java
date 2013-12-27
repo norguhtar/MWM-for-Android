@@ -113,30 +113,30 @@ public class MainActivity extends SherlockFragmentActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 	Editor editor;
 	Intent intent;
-	switch (item.getItemId()) {
-	case R.id.settings:
+	int itemId = item.getItemId();
+	if (itemId == R.id.settings) {
 	    intent = new Intent(this, Settings.class);
 	    startActivity(intent);
 	    return true;
-	case R.id.tests:
+	} else if (itemId == R.id.tests) {
 	    intent = new Intent(this, Test.class);
 	    startActivity(intent);
 	    return true;
-	case R.id.animations_disabled:
+	} else if (itemId == R.id.animations_disabled) {
 	    editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
 	    editor.putBoolean("animations", false);
 	    editor.commit();
 	    Preferences.animations = false;
 	    invalidateOptionsMenu();
 	    return true;
-	case R.id.animations_enabled:
+	} else if (itemId == R.id.animations_enabled) {
 	    editor = PreferenceManager.getDefaultSharedPreferences(this).edit();
 	    editor.putBoolean("animations", true);
 	    editor.commit();
 	    Preferences.animations = true;
 	    invalidateOptionsMenu();
 	    return true;
-	default:
+	} else {
 	    return false;
 	}
     }

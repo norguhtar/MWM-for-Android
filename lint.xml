@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lint>
     <issue id="MissingTranslation" severity="warning" />
+    <issue id="NewApi">
+        <ignore path="src/org/metawatch/manager/MainActivity.java" />
+    </issue>
 </lint>

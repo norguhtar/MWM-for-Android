@@ -150,13 +150,11 @@ public class MetaWatchStatus extends SherlockFragment implements OnClickListener
     public void onClick(View view) {
 	if (Preferences.animations)
 	    wiggleButton(view);
-	switch(view.getId()) {
-	case R.id.startButton:
+	int id = view.getId();
+	if (id == R.id.startButton) {
 	    startService();
-	    break;
-	case R.id.shutdownButton:
+	} else if (id == R.id.shutdownButton) {
 	    stopService();
-	    break;
 	}
     }
     
