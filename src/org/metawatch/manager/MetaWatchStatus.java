@@ -274,6 +274,8 @@ public class MetaWatchStatus extends SherlockFragment implements OnClickListener
 		}
 	    }
 
+	} else if (MetaWatchNotificationListener.notificationListenerEnabled) {
+	    mAccessibilityText.setText("\n" + res.getString(R.string.status_notification_listener_enabled) + "\n");
 	} else {
 	    mAccessibilityText.setText("\n" + res.getString(R.string.status_accessibility_disabled) + "\n");
 	}

@@ -5,10 +5,12 @@ import java.util.Arrays;
 import org.metawatch.manager.MetaWatchService.Preferences;
 
 import android.os.Build;
+import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.service.notification.NotificationListenerService;
 import android.annotation.TargetApi;
 import android.app.Notification;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -23,6 +25,7 @@ public class MetaWatchNotificationListener extends NotificationListenerService {
     private String lastNotificationPackage = "";
     private String lastNotificationText = "";
     private long lastNotificationWhen = 0;
+    public static boolean notificationListenerEnabled = false;
     
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
@@ -139,10 +142,22 @@ public class MetaWatchNotificationListener extends NotificationListenerService {
 		    Log.d(MetaWatchStatus.TAG, "onAccessibilityEvent(): Sending notification: app='" + appName + "' notification='" + tickerText + "'.");
 		NotificationBuilder.createOtherNotification(this, icon, appName, tickerText, buzzes);
 	    }
+	}
     }
-}
 
-
+    @Override
+    public IBinder onBind(Intent mIntent) {
+	IBinder mIBinder = super.onBind(mIntent);
+	notificationListenerEnabled = true;
+	return mIBinder;
+    }
+    
+    @Override
+    public boolean onUnbind(Intent mIntent) {
+	boolean mOnUnbind = super.onUnbind(mIntent);
+	notificationListenerEnabled = false;
+	return mOnUnbind;
+    }
 
     @Override
     public void onNotificationRemoved(StatusBarNotification sbn) {
