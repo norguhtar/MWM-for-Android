@@ -2,6 +2,7 @@
 <lint>
     <issue id="MissingTranslation" severity="warning" />
     <issue id="NewApi">
+        <ignore path="src/org/metawatch/manager/DeviceSelection.java" />
         <ignore path="src/org/metawatch/manager/MainActivity.java" />
     </issue>
 </lint>

@@ -44,6 +44,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
@@ -64,6 +65,7 @@ public class DeviceSelection extends SherlockFragmentActivity {
 
     private ActionBar mActionBar;
     private BluetoothAdapter bluetoothAdapter;
+    private boolean deviceHasBLE;
 
     class Receiver extends BroadcastReceiver {
 	@Override
@@ -167,7 +169,11 @@ public class DeviceSelection extends SherlockFragmentActivity {
 
 	if (bluetoothAdapter == null)
 	    bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-
+	
+	if (getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+	    this.deviceHasBLE = true;
+	}
+	
 	try {
 	    BluetoothAdapter defaultAdapter = BluetoothAdapter.getDefaultAdapter();
 	    defaultAdapter.enable();
@@ -206,9 +212,11 @@ public class DeviceSelection extends SherlockFragmentActivity {
 	intentFilter.addAction(BluetoothDevice.ACTION_FOUND);
 
 	registerReceiver(receiver, intentFilter);
-
-	bluetoothAdapter.startDiscovery();
-
+	/*if (this.deviceHasBLE) {
+	    bluetoothAdapter.startLeScan(null);
+	} else {*/
+	    bluetoothAdapter.startDiscovery();
+	//}
 	ProgressBar progress = (ProgressBar) findViewById(R.id.progressScanning);
 	progress.setVisibility(ProgressBar.VISIBLE);
 
