@@ -74,7 +74,7 @@ public class MetaWatchAccessibilityService extends AccessibilityService {
 	    }
 
 	    android.app.Notification notification = (android.app.Notification) p;
-	    MetaWatchAccessibilityService.processNotification(this, notification);
+	    MetaWatchAccessibilityService.processNotification(this, notification, packageName);
 	} else if (eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
 	    if (currentActivity.startsWith("com.fsck.k9")) {
 		if (!className.startsWith("com.fsck.k9")) {
@@ -93,11 +93,9 @@ public class MetaWatchAccessibilityService extends AccessibilityService {
 	/* Do nothing */
     }
     
-    public static void processNotification(Service serv, android.app.Notification notification) {
-	String packageName = "";
+    public static void processNotification(Service serv, android.app.Notification notification, String packageName) {
 	String className = "";
 	
-	packageName = notification.getClass().getPackage().getName();
 	className = notification.getClass().getName();
 	
 	if (Preferences.logging)

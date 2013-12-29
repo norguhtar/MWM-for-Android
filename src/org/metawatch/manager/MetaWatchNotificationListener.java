@@ -28,7 +28,7 @@ public class MetaWatchNotificationListener extends NotificationListenerService {
     public void onNotificationPosted(StatusBarNotification sbn) {
 	// TODO Auto-generated method stub
 	Notification  notification = sbn.getNotification();
-	MetaWatchAccessibilityService.processNotification(this, notification);
+	MetaWatchAccessibilityService.processNotification(this, notification, sbn.getPackageName());
     }
 
     @Override
