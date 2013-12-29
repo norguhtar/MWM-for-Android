@@ -44,6 +44,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
@@ -193,6 +194,9 @@ public class Settings extends SherlockPreferenceActivity {
 	int currentapiVersion = android.os.Build.VERSION.SDK_INT;
 	if (currentapiVersion < android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
 	    findPreference("InsecureBtSocket").setEnabled(false);
+	}
+	if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+	    findPreference("EnableBLE").setEnabled(false);
 	}
 
 	processActionBar();

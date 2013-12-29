@@ -21,6 +21,7 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.net.wifi.WifiManager;
+import android.speech.RecognizerIntent;
 
 public class InternalActions {
 
@@ -364,14 +365,14 @@ public class InternalActions {
 
     }
 
-    public static class VoiceSearchAction extends AndroidAppAction {
+    public static class VoiceSearchAction extends Action {
 	Context mContext;
 	public VoiceSearchAction(Context context) {
 	    mContext = context;
 	}
 	
 	protected String getPackage() {
-	    return "com.google.android.voicesearch";
+	    return "com.google.android.googlequicksearchbox";
 	}
 
 	public static String id = "voiceSearch";
@@ -381,13 +382,20 @@ public class InternalActions {
 	}
 
 	public String getName() {
-	    try {
-		PackageManager pm = mContext.getPackageManager();
-		pm.getApplicationInfo("com.facebook.android", 0 );
-		return "Voice Search";
-	    } catch( PackageManager.NameNotFoundException e ){
-		return "Voice Search not Installed";
+	    return (android.os.Build.VERSION.SDK_INT < 16) ? "Voice Search" : "Voice Search Not Installed";
+	}
+
+	public String bulletIcon() {
+	    return "bullet_square.bmp";
+	}
+
+	public int performAction(Context context) {
+	    if (android.os.Build.VERSION.SDK_INT < 16) {
+		Intent intent = new Intent(RecognizerIntent.ACTION_WEB_SEARCH);
+		context.startActivity(intent);
 	    }
+
+	    return ApplicationBase.BUTTON_USED;
 	}
     }
 

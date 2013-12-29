@@ -426,4 +426,6 @@
 	<string name="settings_SMS_with_alert_desc_on">Show alert before the message</string>
 	<string name="settings_SMS_with_alert_desc_off">Only show the new message</string>
 	<string name="status_notification_listener_enabled">Notification Listener Service Enabled.</string>
+	<string name="settings_enable_BLE">Enable Bluetooth Low Energy</string>
+	<string name="settings_enable_BLE_desc">MWM will only communicate via BLE</string>
 </resources>

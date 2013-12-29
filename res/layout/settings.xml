@@ -24,7 +24,14 @@
 			android:key="ShowFakeWatches"
 			android:summary="@string/settings_Show_fake_watches_desc"
 			android:defaultValue="false"
-			/>	
+			/>
+		
+		<CheckBoxPreference
+		    android:title="@string/settings_enable_BLE"
+		    android:key="EnableBLE"
+		    android:summary="@string/settings_enable_BLE_desc"
+		    android:defaultValue="false"
+		    />	
 	</PreferenceScreen>
 	
     <CheckBoxPreference
