@@ -51,6 +51,7 @@ import org.metawatch.manager.apps.AppManager;
 import org.metawatch.manager.apps.ApplicationBase;
 import org.metawatch.manager.widgets.WidgetManager;
 
+
 import android.annotation.TargetApi;
 import android.app.ActivityManager;
 import android.app.ActivityManager.MemoryInfo;
@@ -301,22 +302,26 @@ public class MetaWatchService extends Service {
 
 		int currentapiVersion = android.os.Build.VERSION.SDK_INT;
 
-		if (Preferences.skipSDP) {
-		    Method method;
-		    if (Preferences.insecureBtSocket && currentapiVersion >= android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
-			method = bluetoothDevice.getClass().getMethod("createInsecureRfcommSocket", new Class[] { int.class });
-		    } else {
-			method = bluetoothDevice.getClass().getMethod("createRfcommSocket", new Class[] { int.class });
-		    }
-		    bluetoothSocket = (BluetoothSocket) method.invoke(bluetoothDevice, 1);
+		if (!Preferences.BLEenabled) {
+        		if (Preferences.skipSDP) {
+        		    Method method;
+        		    if (Preferences.insecureBtSocket && currentapiVersion >= android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
+        			method = bluetoothDevice.getClass().getMethod("createInsecureRfcommSocket", new Class[] { int.class });
+        		    } else {
+        			method = bluetoothDevice.getClass().getMethod("createRfcommSocket", new Class[] { int.class });
+        		    }
+        		    bluetoothSocket = (BluetoothSocket) method.invoke(bluetoothDevice, 1);
+        		} else {
+        		    UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
+        
+        		    if (Preferences.insecureBtSocket && currentapiVersion >= android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
+        			bluetoothSocket = bluetoothDevice.createInsecureRfcommSocketToServiceRecord(uuid);
+        		    } else {
+        			bluetoothSocket = bluetoothDevice.createRfcommSocketToServiceRecord(uuid);
+        		    }
+        		}
 		} else {
-		    UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB");
-
-		    if (Preferences.insecureBtSocket && currentapiVersion >= android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
-			bluetoothSocket = bluetoothDevice.createInsecureRfcommSocketToServiceRecord(uuid);
-		    } else {
-			bluetoothSocket = bluetoothDevice.createRfcommSocketToServiceRecord(uuid);
-		    }
+		    
 		}
 
 		bluetoothAdapter.cancelDiscovery();
@@ -928,6 +933,7 @@ public class MetaWatchService extends Service {
 	Preferences.displayCalendars = sharedPreferences.getString("DisplayCalendars", Preferences.displayCalendars);
 	Preferences.animations = sharedPreferences.getBoolean("animations", true);
 	Preferences.smsWithAlert = sharedPreferences.getBoolean("NotifySMSAlert", true);
+	Preferences.BLEenabled = sharedPreferences.getBoolean("EnableBLE", true);
 
 	boolean silent = sharedPreferences.getBoolean("SilentMode", silentMode);
 	if (silent != silentMode)
@@ -1169,6 +1175,7 @@ public class MetaWatchService extends Service {
 	public static int calendarLookahead = 24;
 	public static boolean animations = true;
 	public static boolean smsWithAlert = true;
+	public static boolean BLEenabled = false;
     }
 
     public final class WatchType {

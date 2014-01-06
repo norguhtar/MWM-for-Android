@@ -46,6 +46,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -66,6 +67,16 @@ public class DeviceSelection extends SherlockFragmentActivity {
     private ActionBar mActionBar;
     private BluetoothAdapter bluetoothAdapter;
     private boolean deviceHasBLE;
+    private boolean BLEEnabled = false;
+    private boolean scanning; // might be used later to stop scanning
+    private Handler mHandler;
+    private BluetoothAdapter.LeScanCallback mLeScanCallBack = new BluetoothAdapter.LeScanCallback() {
+        
+        @Override
+        public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {
+            addToList(device.getAddress(), device.getName());
+        }
+    };
 
     class Receiver extends BroadcastReceiver {
 	@Override
@@ -126,7 +137,8 @@ public class DeviceSelection extends SherlockFragmentActivity {
 
 	SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
 	boolean showFakeWatches = sharedPreferences.getBoolean("ShowFakeWatches", false);
-
+	BLEEnabled = sharedPreferences.getBoolean("EnableBLE", false);
+	
 	setContentView(R.layout.device_selection);
 	listView = (ListView) findViewById(android.R.id.list);
 
@@ -162,7 +174,11 @@ public class DeviceSelection extends SherlockFragmentActivity {
 	searchButton.setOnClickListener(new OnClickListener() {
 
 	    public void onClick(View arg0) {
-		startDiscovery();
+		if (deviceHasBLE && BLEEnabled) {
+		    startBLEDiscovery(true);
+		} else {
+		    startDiscovery();
+		}
 	    }
 
 	});
@@ -195,7 +211,11 @@ public class DeviceSelection extends SherlockFragmentActivity {
 	progress.setVisibility(ProgressBar.GONE);
 
 	if ( bluetoothAdapter.isEnabled())
-	    startDiscovery();
+	    if (deviceHasBLE && BLEEnabled) {
+		    startBLEDiscovery(true);
+		} else {
+		    startDiscovery();
+		}
 
 	processActionBar();
 
@@ -223,6 +243,47 @@ public class DeviceSelection extends SherlockFragmentActivity {
 	Button searchButton = (Button) findViewById(R.id.buttonSearch);
 	searchButton.setEnabled(false);
 	searchButton.setText("Searching...");
+    }
+    
+    void startBLEDiscovery(boolean enable) {
+	final long SCAN_PERIOD = 10000;
+	if (enable) {
+	    mHandler.postDelayed(new Runnable() {
+
+		@Override
+		public void run() {
+		    scanning = false;
+		    bluetoothAdapter.stopLeScan(mLeScanCallBack);
+		    
+		    ProgressBar progress = (ProgressBar) findViewById(R.id.progressScanning);
+		    if (progress != null)
+			progress.setVisibility(ProgressBar.INVISIBLE);
+		    Button searchButton = (Button) findViewById(R.id.buttonSearch);
+		    searchButton.setEnabled(true);
+		    searchButton.setText("Search for devices");
+		}
+
+	    }, SCAN_PERIOD);
+
+	    scanning = true;
+	    bluetoothAdapter.startLeScan(mLeScanCallBack);
+	    
+	    ProgressBar progress = (ProgressBar) findViewById(R.id.progressScanning);
+	    progress.setVisibility(ProgressBar.VISIBLE);
+	    Button searchButton = (Button) findViewById(R.id.buttonSearch);
+	    searchButton.setEnabled(false);
+	    searchButton.setText("Searching...");
+	} else {
+	    scanning = false;
+	    bluetoothAdapter.stopLeScan(mLeScanCallBack);
+	    
+	    ProgressBar progress = (ProgressBar) findViewById(R.id.progressScanning);
+	    if (progress != null)
+		progress.setVisibility(ProgressBar.INVISIBLE);
+	    Button searchButton = (Button) findViewById(R.id.buttonSearch);
+	    searchButton.setEnabled(true);
+	    searchButton.setText("Search for devices");
+	}
     }
 
     void addToList(String mac, String name) {

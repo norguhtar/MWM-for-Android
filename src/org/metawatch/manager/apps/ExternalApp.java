@@ -133,5 +133,15 @@ public class ExternalApp extends ApplicationBase {
     public void setBuffer(Bitmap bitmap) {
 	buffer = bitmap;
     }
+    
+    public void showSettings(Context context) {
+	if (appData != null) {
+	    Intent intent = new Intent("org.metawatch.manager.APPLICATION_ACTIVATE_SETTINGS");
+	    Bundle b = new Bundle();
+	    b.putString("id", appData.id);
+	    intent.putExtras(b);
+	    context.sendBroadcast(intent);
+	}
+    }
 
 }
