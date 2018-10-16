@@ -35,6 +35,9 @@ import org.metawatch.manager.MetaWatchService.GeolocationMode;
 import org.metawatch.manager.MetaWatchService.Preferences;
 import org.metawatch.manager.MetaWatchService.WeatherProvider;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
+import android.app.ActionBar;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.bluetooth.BluetoothAdapter;
@@ -44,6 +47,8 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -54,20 +59,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.internal.nineoldandroids.animation.AnimatorSet;
-import com.actionbarsherlock.internal.nineoldandroids.animation.ObjectAnimator;
 import com.bugsense.trace.BugSenseHandler;
 
-public class MetaWatchStatus extends SherlockFragment implements OnClickListener, Runnable {
+public class MetaWatchStatus extends AppCompatActivity implements OnClickListener, Runnable {
 
     public static final String TAG = "MetaWatchStatus";
     public Button mStatistics = null;
     public Button mStartButton = null;
     public Button mShutdownButton = null;
-    private SherlockFragmentActivity mContext = null;
+    private FragmentActivity mContext = null;
     public long mStartupTime = 0;
     private TextView mStatisticsText = null;
     private TextView mAccessibilityText = null;
@@ -86,8 +86,8 @@ public class MetaWatchStatus extends SherlockFragment implements OnClickListener
     @Override
     public void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
-	mContext = (SherlockFragmentActivity) getActivity();
-	mActionBar = mContext.getSupportActionBar();
+	mContext = (FragmentActivity) this;
+	mActionBar = mContext.getActionBar();
 	LinearLayout statisticsContainer = new LinearLayout(mContext);
 	statisticsContainer.setGravity(Gravity.CENTER);
 	statisticsContainer.setOrientation(LinearLayout.VERTICAL);
@@ -129,22 +129,22 @@ public class MetaWatchStatus extends SherlockFragment implements OnClickListener
 	}
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-	mMainView = inflater.inflate(R.layout.main, null);
-	mStatistics = (Button) mMainView.findViewById(R.id.statistics);
-	mStatistics.setOnClickListener(new OnClickListener() {
-	    @Override
-	    public void onClick(View v) {
-		mStatisticsDialog.show();
-	    }
-	});
-	mStartButton = (Button) mMainView.findViewById(R.id.startButton);
-	mStartButton.setOnClickListener(this);
-	mShutdownButton = (Button) mMainView.findViewById(R.id.shutdownButton);
-	mShutdownButton.setOnClickListener(this);
-	return mMainView;
-    }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//	mMainView = inflater.inflate(R.layout.main, null);
+//	mStatistics = (Button) mMainView.findViewById(R.id.statistics);
+//	mStatistics.setOnClickListener(new OnClickListener() {
+//	    @Override
+//	    public void onClick(View v) {
+//		mStatisticsDialog.show();
+//	    }
+//	});
+//	mStartButton = (Button) mMainView.findViewById(R.id.startButton);
+//	mStartButton.setOnClickListener(this);
+//	mShutdownButton = (Button) mMainView.findViewById(R.id.shutdownButton);
+//	mShutdownButton.setOnClickListener(this);
+//	return mMainView;
+//    }
     
     @Override
     public void onClick(View view) {

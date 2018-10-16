@@ -302,9 +302,9 @@ public class WeatherWidget implements InternalWidget {
 
 	    // temperatures
 	    if (Monitors.getInstance().weatherData.celsius) {
-		Utils.drawOutlinedText(Monitors.getInstance().weatherData.temp + "°C", canvas, 0, 7, paintSmall, paintSmallOutline);
+		Utils.drawOutlinedText(Monitors.getInstance().weatherData.temp + "C", canvas, 0, 7, paintSmall, paintSmallOutline);
 	    } else {
-		Utils.drawOutlinedText(Monitors.getInstance().weatherData.temp + "°F", canvas, 0, 7, paintSmall, paintSmallOutline);
+		Utils.drawOutlinedText(Monitors.getInstance().weatherData.temp + "F", canvas, 0, 7, paintSmall, paintSmallOutline);
 	    }
 	    paintLarge.setTextAlign(Paint.Align.LEFT);
 
@@ -492,9 +492,9 @@ public class WeatherWidget implements InternalWidget {
 	    string.append(Monitors.getInstance().weatherData.temp);
 
 	    if (Monitors.getInstance().weatherData.celsius) {
-		string.append("°C");
+		string.append("?C");
 	    } else {
-		string.append("°F");
+		string.append("?F");
 	    }
 	    Utils.drawOutlinedText(string.toString(), canvas, 80, 5, paintSmall, paintSmallOutline);
 

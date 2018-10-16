@@ -37,6 +37,7 @@ import java.util.TreeSet;
 
 import org.metawatch.manager.MetaWatchService.Preferences;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -49,6 +50,8 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -59,13 +62,9 @@ import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.MenuItem;
+public class DeviceSelection extends AppCompatActivity {
 
-public class DeviceSelection extends Activity {
-
-    private ActionBar mActionBar;
+    private android.support.v7.app.ActionBar mActionBar;
     private BluetoothAdapter bluetoothAdapter;
     private boolean deviceHasBLE;
     private boolean BLEEnabled = false;
@@ -119,7 +118,7 @@ public class DeviceSelection extends Activity {
     }
 
     private void processActionBar() {
-	mActionBar = getSupportActionBar();
+	mActionBar =  getSupportActionBar();
 	mActionBar.setDisplayHomeAsUpEnabled(true);
 	mActionBar.setDisplayShowTitleEnabled(true);
 	this.invalidateOptionsMenu();

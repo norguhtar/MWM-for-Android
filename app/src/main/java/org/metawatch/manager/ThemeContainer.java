@@ -1,17 +1,13 @@
 package org.metawatch.manager;
 
-import android.app.Activity;
+import android.app.ActionBar;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.FragmentActivity;
+import android.view.MenuItem;
 import android.view.Window;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.ActionBar.Tab;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.MenuItem;
-
-public class ThemeContainer extends Activity {
+public class ThemeContainer extends FragmentActivity {
     ActionBar mActionBar;
     ActionBar.Tab mGalleryTab;
     ActionBar.Tab mDownloadedTab;
@@ -23,7 +19,7 @@ public class ThemeContainer extends Activity {
 	setContentView(R.layout.themes_container);
 	setProgressBarIndeterminateVisibility(Boolean.FALSE);
 
-	mActionBar = getSupportActionBar();
+	mActionBar = getActionBar();
 	mActionBar.setDisplayHomeAsUpEnabled(true);
 	mActionBar.setTitle("Themes Manager");
 	mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -31,8 +27,8 @@ public class ThemeContainer extends Activity {
 	mGalleryTab = mActionBar.newTab().setText(R.string.ui_tab_downloaded_themes);
 	mDownloadedTab = mActionBar.newTab().setText(R.string.ui_tab_theme_gallery);
 
-	Fragment galleryFragment = ThemeGallery.newInstance();
-	Fragment downloadedFragment = ThemePicker.newInstance();
+	ThemeGallery galleryFragment = ThemeGallery.newInstance();
+	ThemePicker downloadedFragment = ThemePicker.newInstance();
 
 	mGalleryTab.setTabListener(new MyTabsListener(galleryFragment));
 	mDownloadedTab.setTabListener(new MyTabsListener(downloadedFragment));
@@ -48,21 +44,22 @@ public class ThemeContainer extends Activity {
 	    this.fragment = fragment;
 	}
 
-	@Override
-	public void onTabReselected(Tab tab, FragmentTransaction ft) {
-	}
 
-	@Override
-	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-	    ft.replace(R.id.themes_container, fragment);
-	}
+		@Override
+		public void onTabSelected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
 
-	@Override
-	public void onTabUnselected(Tab tab, FragmentTransaction ft) {
-	    ft.remove(fragment);
-	}
+		}
 
-    }
+		@Override
+		public void onTabUnselected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
+
+		}
+
+		@Override
+		public void onTabReselected(ActionBar.Tab tab, android.app.FragmentTransaction ft) {
+
+		}
+	}
 
     public void setGalleryTabSelected() {
 	mActionBar.selectTab(mGalleryTab);

@@ -11,6 +11,8 @@ import org.metawatch.manager.MetaWatchService.Preferences;
 import org.metawatch.manager.widgets.InternalWidget.WidgetData;
 import org.metawatch.manager.widgets.WidgetManager;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
@@ -28,6 +30,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -38,18 +42,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragment;
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.internal.nineoldandroids.animation.Animator;
-import com.actionbarsherlock.internal.nineoldandroids.animation.Animator.AnimatorListener;
-import com.actionbarsherlock.internal.nineoldandroids.animation.ObjectAnimator;
 
 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
-public class WidgetSetup extends SherlockFragment {
+public class WidgetSetup extends Fragment {
     private LinearLayout mIdlePreviews;
     private ExpandableListView widgetList;
     private WidgetListAdaptor adapter;
-    private SherlockFragmentActivity mActivity;
+    private FragmentActivity mActivity;
     private int mCurrentNumberOfPages = 0;
     private View mMainView = null;
     private Handler mHandler = new Handler(Looper.getMainLooper());
@@ -248,7 +247,7 @@ public class WidgetSetup extends SherlockFragment {
     @Override
     public void onCreate(Bundle bundle) {
 	super.onCreate(bundle);
-	mActivity = (SherlockFragmentActivity) getActivity();
+	mActivity = (FragmentActivity) getActivity();
     }
 
     @Override
@@ -427,7 +426,7 @@ public class WidgetSetup extends SherlockFragment {
 	return bmp;
     }
 
-    private class MyAnimatorListener implements AnimatorListener {
+    private class MyAnimatorListener implements Animator.AnimatorListener {
 
 	private ImageView iv;
 	private Bitmap bmp;

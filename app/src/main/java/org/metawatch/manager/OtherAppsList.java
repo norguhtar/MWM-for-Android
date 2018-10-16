@@ -7,7 +7,6 @@ import java.util.List;
 
 import org.metawatch.manager.MetaWatchService.Preferences;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -17,9 +16,11 @@ import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -29,10 +30,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.Window;
-
-public class OtherAppsList extends Activity {
+public class OtherAppsList extends AppCompatActivity {
 
     public static final String DEFAULT_BLACKLIST = "com.android.mms," + "com.google.android.gm," + "com.fsck.k9," + "com.android.alarmclock," + "com.htc.android.worldclock," + "com.android.deskclock," + "com.sonyericsson.alarm," + "com.motorola.blur.alarmclock";
     private List<AppInfo> appInfos;

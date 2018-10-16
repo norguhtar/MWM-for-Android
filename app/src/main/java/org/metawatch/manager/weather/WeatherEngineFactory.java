@@ -19,8 +19,8 @@ public class WeatherEngineFactory {
 	    return new WunderWeatherEngine();
 
 	case WeatherProvider.GOOGLE_DEPRECATED:
-	case WeatherProvider.YAHOO:
-	    return new YahooWeatherEngine();
+//	case WeatherProvider.YAHOO:
+//	    return new YahooWeatherEngine();
 
 	default:
 	    return new DummyWeatherEngine();

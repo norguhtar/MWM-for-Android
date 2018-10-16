@@ -576,7 +576,7 @@ public class Protocol {
 	}
 
 	char[] order = DateFormat.getDateFormatOrder(context);
-	if (order[0] == DateFormat.DATE) {
+	if (order[0] == 'd') {
 	    setNvalDate(true);
 	    if (Preferences.logging)
 		Log.d(MetaWatchStatus.TAG, "Setting watch to ddmm format");

@@ -21,7 +21,6 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.PixelXorXfermode;
 import android.graphics.Region;
 import android.text.Layout;
 import android.text.StaticLayout;
@@ -243,7 +242,7 @@ public class ActionsApp extends ApplicationBase {
 	int textHeight = FontCache.instance(context).Get().realSize;
 
 	Paint paintXor = new Paint();
-	paintXor.setXfermode(new PixelXorXfermode(Color.WHITE));
+//	paintXor.setXfermode(new PixelXorXfermode(Color.WHITE));
 
 	Paint paintWhite = new Paint();
 	paintWhite.setColor(Color.WHITE);
@@ -383,8 +382,8 @@ public class ActionsApp extends ApplicationBase {
 	paint.setTextSize(FontCache.instance(context).Small.size);
 	paint.setTypeface(FontCache.instance(context).Small.face);
 
-	Paint paintXor = new Paint();
-	paintXor.setXfermode(new PixelXorXfermode(Color.WHITE));
+//	Paint paintXor = new Paint();
+//	paintXor.setXfermode(new PixelXorXfermode(Color.WHITE));
 
 	Paint paintWhite = new Paint();
 	paintWhite.setColor(Color.WHITE);

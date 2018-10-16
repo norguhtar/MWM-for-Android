@@ -38,7 +38,7 @@ import org.metawatch.manager.apps.AppManager;
 import org.metawatch.manager.apps.ApplicationBase.AppData;
 import org.metawatch.manager.widgets.WidgetManager;
 
-import android.app.Activity;
+import android.app.ActionBar;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
@@ -54,16 +54,16 @@ import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
+import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.webkit.WebView;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
 
 @SuppressWarnings("deprecation")
-public class Settings extends Activity {
+public class Settings extends PreferenceActivity {
 
     static CharSequence[] entriesArray;
     static CharSequence[] entryValuesArray;
@@ -204,7 +204,7 @@ public class Settings extends Activity {
     }
 
     private void processActionBar() {
-	mActionBar = getSupportActionBar();
+	mActionBar = getActionBar();
 	mActionBar.setTitle(R.string.metawatch_preferences);
 	mActionBar.setDisplayHomeAsUpEnabled(true);
 	mActionBar.setDisplayShowTitleEnabled(true);

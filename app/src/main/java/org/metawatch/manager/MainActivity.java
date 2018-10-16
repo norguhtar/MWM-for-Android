@@ -2,23 +2,22 @@ package org.metawatch.manager;
 
 import org.metawatch.manager.MetaWatchService.Preferences;
 
+import android.animation.Animator;
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.DecelerateInterpolator;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.internal.nineoldandroids.animation.Animator;
-import com.actionbarsherlock.internal.nineoldandroids.animation.Animator.AnimatorListener;
-import com.actionbarsherlock.internal.nineoldandroids.animation.ObjectAnimator;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.view.Window;
-
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle bundle) {
 	super.onCreate(bundle);
@@ -31,7 +30,7 @@ public class MainActivity extends Activity {
 	downFromTop.setDuration(1250);
 	downFromTop.setStartDelay(500);
 	downFromTop.setInterpolator(new DecelerateInterpolator());
-	downFromTop.addListener(new AnimatorListener() {
+	downFromTop.addListener(new Animator.AnimatorListener() {
 	    @Override
 	    public void onAnimationStart(Animator animation) {
 		view.setVisibility(View.VISIBLE);
@@ -53,7 +52,7 @@ public class MainActivity extends Activity {
 	inFromLeft.setDuration(1000);
 	inFromLeft.setStartDelay(500);
 	inFromLeft.setInterpolator(new DecelerateInterpolator());
-	inFromLeft.addListener(new AnimatorListener() {
+	inFromLeft.addListener(new Animator.AnimatorListener() {
 	    @Override
 	    public void onAnimationStart(Animator animation) {
 		view.setVisibility(View.VISIBLE);
@@ -92,7 +91,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 	super.onCreateOptionsMenu(menu);
-	com.actionbarsherlock.view.MenuInflater inflater = getSupportMenuInflater();
+	MenuInflater inflater = getMenuInflater();
 	inflater.inflate(R.menu.main, menu);
 	enableAnimations = menu.findItem(R.id.animations_enabled);
 	disableAnimations = menu.findItem(R.id.animations_disabled);

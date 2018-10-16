@@ -17,6 +17,7 @@ import android.os.Bundle;
 import org.metawatch.manager.Log;
 
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,9 +29,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.actionbarsherlock.app.SherlockFragment;
 
-public class ThemePicker extends Activity implements OnItemClickListener {
+public class ThemePicker extends Fragment implements OnItemClickListener {
 
     public static ThemePicker newInstance() {
 	return new ThemePicker();
@@ -148,30 +148,30 @@ public class ThemePicker extends Activity implements OnItemClickListener {
 	}
     };
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-	View view = inflater.inflate(R.layout.theme_picker, null);
-	themeList = new ArrayList<ThemeDescription>();
-	addTheme(BitmapCache.getInstance().getInternalTheme(getActivity()));
-	File searchDir = Utils.getExternalFilesDir(getActivity(), "Themes");
-	if (searchDir != null) {
-	    File[] themeFiles = searchDir.listFiles();
-	    for (File file : themeFiles) {
-		String themeName = file.getName().replace(".zip", "");
-		if (Preferences.logging)
-		    Log.d(MetaWatchStatus.TAG, "Found theme " + themeName);
-		addTheme(BitmapCache.getInstance().loadTheme(getActivity(), themeName));
-	    }
-	}
-
-	Collections.sort(themeList, COMPARATOR);
-	if (Preferences.logging)
-	    Log.d(MetaWatchStatus.TAG, "Showing " + themeList.size() + " themes");
-	ListView listView = (ListView) view.findViewById(R.id.theme_picker_list);
-	listView.setAdapter(new EfficientAdapter(getActivity(), themeList));
-	listView.setOnItemClickListener(this);
-	return view;
-    }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+//	View view = inflater.inflate(R.layout.theme_picker, null);
+//	themeList = new ArrayList<ThemeDescription>();
+//	addTheme(BitmapCache.getInstance().getInternalTheme(getActivity()));
+//	File searchDir = Utils.getExternalFilesDir(getActivity(), "Themes");
+//	if (searchDir != null) {
+//	    File[] themeFiles = searchDir.listFiles();
+//	    for (File file : themeFiles) {
+//		String themeName = file.getName().replace(".zip", "");
+//		if (Preferences.logging)
+//		    Log.d(MetaWatchStatus.TAG, "Found theme " + themeName);
+//		addTheme(BitmapCache.getInstance().loadTheme(getActivity(), themeName));
+//	    }
+//	}
+//
+//	Collections.sort(themeList, COMPARATOR);
+//	if (Preferences.logging)
+//	    Log.d(MetaWatchStatus.TAG, "Showing " + themeList.size() + " themes");
+//	ListView listView = (ListView) view.findViewById(R.id.theme_picker_list);
+//	listView.setAdapter(new EfficientAdapter(getActivity(), themeList));
+//	listView.setOnItemClickListener(this);
+//	return view;
+//    }
 
     private String getProperty(Properties properties, String key, String defaultVal) {
 	if (properties != null && properties.containsKey(key))
@@ -200,14 +200,14 @@ public class ThemePicker extends Activity implements OnItemClickListener {
 	Intent result = new Intent();
 
 	Preferences.themeName = themeList.get(position).name;
-	MetaWatchService.saveTheme(getActivity(), Preferences.themeName);
+//	MetaWatchService.saveTheme(this, Preferences.themeName);
 
 	if (Preferences.logging)
 	    Log.d(MetaWatchStatus.TAG, "Selected theme '" + Preferences.themeName + "'");
 
-	getActivity().setResult(Activity.RESULT_OK, result);
+//	setResult(Activity.RESULT_OK, result);
 
-	Toast.makeText(getActivity(), R.string.theme_applied, Toast.LENGTH_SHORT).show();
-	Idle.getInstance().updateIdle(getActivity(), true);
+//	Toast.makeText(this, R.string.theme_applied, Toast.LENGTH_SHORT).show();
+//	Idle.getInstance().updateIdle(this, true);
     }
 }

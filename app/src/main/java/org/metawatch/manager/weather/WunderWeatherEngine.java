@@ -6,11 +6,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -225,19 +220,19 @@ public class WunderWeatherEngine extends AbstractWeatherEngine {
 	String result = "";
 	JSONObject jArray = null;
 
-	// http post
-	try {
-	    HttpClient httpclient = new DefaultHttpClient();
-	    HttpPost httppost = new HttpPost(url);
-	    HttpResponse response = httpclient.execute(httppost);
-	    HttpEntity entity = response.getEntity();
-	    is = entity.getContent();
-
-	} catch (Exception e) {
-	    if (Preferences.logging)
-		Log.e(MetaWatchStatus.TAG, "Error in http connection " + e.toString());
-	    throw Utils.createCompatibleIOException(e);
-	}
+//	// http post
+//	try {
+//	    HttpClient httpclient = new DefaultHttpClient();
+//	    HttpPost httppost = new HttpPost(url);
+//	    HttpResponse response = httpclient.execute(httppost);
+//	    HttpEntity entity = response.getEntity();
+//	    is = entity.getContent();
+//
+//	} catch (Exception e) {
+//	    if (Preferences.logging)
+//		Log.e(MetaWatchStatus.TAG, "Error in http connection " + e.toString());
+//	    throw Utils.createCompatibleIOException(e);
+//	}
 
 	// convert response to string
 	if (is != null) {

@@ -2,14 +2,14 @@ package org.metawatch.manager;
 
 import org.metawatch.manager.MetaWatchService.Preferences;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
 import org.metawatch.manager.Log;
 
-import com.actionbarsherlock.app.SherlockFragmentActivity;
 
-public class SendTextReceiver extends Activity {
+public class SendTextReceiver extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

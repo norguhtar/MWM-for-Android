@@ -38,19 +38,18 @@ import org.metawatch.manager.MetaWatchService.WatchType;
 import org.metawatch.manager.Notification.VibratePattern;
 import org.metawatch.manager.apps.AppManager;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceScreen;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
 
 @SuppressWarnings("deprecation")
-public class Test extends Activity {
+public class Test extends AppCompatActivity {
 
     Context context;
     PreferenceScreen preferenceScreen;
@@ -61,9 +60,9 @@ public class Test extends Activity {
 	super.onCreate(savedInstanceState);
 	context = this;
 
-	addPreferencesFromResource(R.layout.test);
-
-	preferenceScreen = getPreferenceScreen();
+//	addPreferencesFromResource(R.layout.test);
+//
+//	preferenceScreen = getPreferenceScreen();
 
 	processActionBar();
 
