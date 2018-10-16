@@ -1,0 +1,642 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+MERGED from [com.android.support:design:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7b99e02ab09f1a2a173824807671872e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5b6d7cceda50f9b0a8d3fc7ba6ae5646/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/686b8d5dd8a63d6a16a550fe8fe8d2a8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/335f00191cd6cf0a9bc6c2dfd649e447/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/178836ab208ed4ae4905d529eff626bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/3a82df739b1eba7269e45f2d7f797a19/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/6ced30e53272a5e5089974645b620300/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/38b2a7681cd972e46a827bd4ab620be2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5aa98b27ec6a49bfa00e87a54fc39fa3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e5db35119e5eb07fac724d1dc88c753a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/ae8e7c46ab43862b2d811e4c1f1b7720/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d97625cbb4f452563873eaf10affeb14/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/6d5e2b9a603327f87f2defa5ef908193/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e030deaf5a9615130cc1126dc1531112/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7e0757223f81c217c75f5c142859c3a3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/de3d0419d4527877a47d791f23db6a16/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/be63fa6e4f10688c0193e8bb54a380ae/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/b20d251981eaf6c6efa227b1668159d5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5740709a87206b112006e6099a8376a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e08ffa89ddc5cb8e928121a8712e25c8/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/cdb3f3ac5451ab309dae0fa2f2972e8d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b0d0597b9fd38453abaf82b9b40a93a9/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/145520732913cb3fb75044e0331dad24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/40a82173b67f71a4372f3190b5c423e8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/38e41d0ce27c63db26faa74e3fca2ad5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/17fe1fca4f57b983f6dd37414124938f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4aa831aae21d970a13c86d8d5c68133f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/57c4aece400ab5396d9e817977133683/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5184cd6b1a86838dfa6b2887b7974dcb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d5fa82a10accff2b26823f54f72d0d08/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5b453b5195f09e60fda819533a6261d0/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:1-176:12
+	package
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:3:7-38
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:5:46-77
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:4:7-31
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+	android:installLocation
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:5:7-45
+supports-screens
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:8:5-9:63
+	android:largeScreens
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:9:6-33
+	android:smallScreens
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:9:34-61
+	android:normalScreens
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:8:49-77
+	android:resizeable
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:8:23-48
+	android:anyDensity
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:8:78-103
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:11:2-75
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:11:19-73
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:12:2-76
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:12:19-73
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:13:2-73
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:13:19-70
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:14:2-64
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:14:19-62
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:15:2-70
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:15:19-68
+uses-permission#android.permission.CALL_PHONE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:16:2-65
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:16:19-63
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:17:2-73
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:17:19-70
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:18:2-67
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:18:19-65
+uses-permission#android.permission.INTERNET
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:19:2-63
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:19:19-61
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:20:2-77
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:20:19-74
+uses-permission#android.permission.PROCESS_OUTGOING_CALLS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:21:2-78
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:21:19-75
+uses-permission#android.permission.READ_CALENDAR
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:22:2-68
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:22:19-66
+uses-permission#android.permission.READ_CONTACTS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:23:2-68
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:23:19-66
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:24:2-71
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:24:19-69
+uses-permission#android.permission.READ_SMS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:25:2-64
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:25:19-61
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:26:2-77
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:26:19-75
+uses-permission#android.permission.RECEIVE_SMS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:27:2-66
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:27:19-64
+uses-permission#android.permission.RECEIVE_MMS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:28:2-66
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:28:19-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:29:2-77
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:29:19-75
+uses-permission#android.permission.READ_CALL_LOG
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:30:2-68
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:30:19-66
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:31:2-65
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:31:19-62
+uses-permission#com.fsck.k9.permission.READ_MESSAGES
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:33:2-72
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:33:19-70
+uses-permission#com.google.android.gm.permission.READ_GMAIL
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:35:2-79
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:35:19-77
+uses-permission#com.google.android.gm.permission.READ_CONTENT_PROVIDER
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:36:2-91
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:36:19-88
+uses-permission#com.google.android.providers.gmail.permission.READ_GMAIL
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:37:2-92
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:37:19-90
+uses-permission#com.google.android.providers.talk.permission.READ_ONLY
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:38:2-90
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:38:19-88
+uses-feature#android.hardware.telephony
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:40:2-85
+	android:required
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:40:58-82
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:40:16-57
+uses-feature#android.hardware.location
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:41:2-84
+	android:required
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:41:57-81
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:41:16-56
+uses-feature#android.hardware.location.network
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:42:2-92
+	android:required
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:42:65-89
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:42:16-64
+uses-feature#android.hardware.location.gps
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:43:2-88
+	android:required
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:43:61-85
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:43:16-60
+uses-feature#android.hardware.wifi
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:44:2-80
+	android:required
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:44:53-77
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:44:16-52
+uses-feature#android.hardware.bluetooth_le
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:45:2-87
+	android:required
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:45:61-85
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:45:16-60
+application
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:47:5-175:19
+MERGED from [com.android.support:design:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7b99e02ab09f1a2a173824807671872e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7b99e02ab09f1a2a173824807671872e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/686b8d5dd8a63d6a16a550fe8fe8d2a8/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/686b8d5dd8a63d6a16a550fe8fe8d2a8/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5740709a87206b112006e6099a8376a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5740709a87206b112006e6099a8376a/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e08ffa89ddc5cb8e928121a8712e25c8/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e08ffa89ddc5cb8e928121a8712e25c8/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5740709a87206b112006e6099a8376a/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:47:53-85
+	android:hardwareAccelerated
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:47:86-120
+	android:icon
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:47:18-52
+	android:theme
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:47:121-152
+activity#org.metawatch.manager.MainActivity
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:48:9-53:20
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:48:120-151
+	android:configChanges
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:48:69-119
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:48:19-68
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:49:13-52:29
+action#android.intent.action.MAIN
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:50:17-69
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:50:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:51:17-77
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:51:27-74
+activity#org.metawatch.manager.SendTextReceiver
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:54:3-60:20
+	android:label
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:54:13-42
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:54:97-128
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:54:43-96
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:55:4-59:20
+action#android.intent.action.SEND
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:56:5-57
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:56:13-54
+category#android.intent.category.DEFAULT
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:57:5-64
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:57:15-61
+data
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:58:5-43
+	android:host
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:105:46-69
+	android:scheme
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:105:23-45
+	android:pathPattern
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:118:6-38
+	android:mimeType
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:58:11-40
+activity#org.metawatch.manager.DeviceSelection
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:61:3-62:14
+	android:label
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:61:13-45
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:61:150-181
+	android:configChanges
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:61:99-149
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:61:46-98
+activity#org.metawatch.manager.OtherAppsList
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:63:3-68:14
+	android:label
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:64:4-30
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:67:4-35
+	android:configChanges
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:66:4-54
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:65:4-54
+activity#org.metawatch.manager.ImageViewer
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:69:3-75:14
+	android:label
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:69:13-42
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:69:43-91
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:image/*
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:70:4-74:20
+receiver#org.metawatch.manager.IntentReceiver
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:76:9-138:20
+	android:exported
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:76:71-94
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:76:19-70
+intent-filter#action:name:android.bluetooth.adapter.action.STATE_CHANGED+action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.NEW_OUTGOING_CALL+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET+action:name:android.provider.Telephony.SMS_RECEIVED+action:name:com.adam.aslfms.notify.playstatechanged+action:name:com.amazon.mp3.metachanged+action:name:com.android.alarmclock.ALARM_ALERT+action:name:com.android.deskclock.ALARM_ALERT+action:name:com.android.music.metachanged+action:name:com.htc.android.worldclock.ALARM_ALERT+action:name:com.motorola.blur.alarmclock.ALARM_ALERT+action:name:com.motorola.blur.alarmclock.COUNT_DOWN+action:name:com.sonyericsson.alarm.ALARM_ALERT+action:name:com.sonyericsson.music.playbackcontrol.ACTION_TRACK_STARTED+action:name:com.usk.app.notifymyandroid.NEW_NOTIFICATION+action:name:fm.last.android.metachanged+action:name:org.metawatch.manager.UPDATE_APPSCREEN_CLOCK+action:name:org.metawatch.manager.UPDATE_CALENDAR
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:77:13-98:29
+action#android.bluetooth.adapter.action.STATE_CHANGED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:78:5-76
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:78:13-74
+action#android.intent.action.BATTERY_LOW
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:79:14-72
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:79:22-70
+action#android.intent.action.NEW_OUTGOING_CALL
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:80:14-79
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:80:22-76
+action#android.intent.action.TIME_SET
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:81:14-69
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:81:22-67
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:82:14-78
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:82:22-75
+action#android.provider.Telephony.SMS_RECEIVED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:83:14-79
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:83:22-76
+action#com.adam.aslfms.notify.playstatechanged
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:84:14-79
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:84:22-76
+action#com.amazon.mp3.metachanged
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:85:14-66
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:85:22-63
+action#com.android.alarmclock.ALARM_ALERT
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:86:14-74
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:86:22-71
+action#com.android.deskclock.ALARM_ALERT
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:87:14-73
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:87:22-70
+action#com.android.music.metachanged
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:88:14-69
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:88:22-66
+action#com.htc.android.worldclock.ALARM_ALERT
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:89:14-78
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:89:22-75
+action#com.motorola.blur.alarmclock.ALARM_ALERT
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:90:14-80
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:90:22-77
+action#com.motorola.blur.alarmclock.COUNT_DOWN
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:91:14-79
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:91:22-76
+action#com.sonyericsson.alarm.ALARM_ALERT
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:92:14-74
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:92:22-71
+action#com.sonyericsson.music.playbackcontrol.ACTION_TRACK_STARTED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:93:14-99
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:93:22-96
+action#org.metawatch.manager.UPDATE_CALENDAR
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:94:14-76
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:94:22-74
+action#org.metawatch.manager.UPDATE_APPSCREEN_CLOCK
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:95:14-83
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:95:22-81
+action#com.usk.app.notifymyandroid.NEW_NOTIFICATION
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:96:14-84
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:96:22-81
+action#fm.last.android.metachanged
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:97:14-67
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:97:22-64
+intent-filter#action:name:android.intent.action.EVENT_REMINDER+data:mimeType:vnd.android.cursor.item/calendar-alert
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:99:13-102:26
+action#android.intent.action.EVENT_REMINDER
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:100:14-76
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:100:22-73
+intent-filter#action:name:com.fsck.k9.intent.action.EMAIL_RECEIVED+data:host:messages+data:scheme:email
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:103:10-106:29
+action#com.fsck.k9.intent.action.EMAIL_RECEIVED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:104:14-80
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:104:22-77
+intent-filter#action:name:windroid.SMART_DEVICE_UPDATE_EMAILS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:107:13-109:29
+action#windroid.SMART_DEVICE_UPDATE_EMAILS
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:108:14-75
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:108:22-72
+intent-filter#action:name:android.intent.action.PROVIDER_CHANGED+data:host:gmail-ls+data:pathPattern:/unread/.*+data:scheme:content
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:110:13-120:20
+action#android.intent.action.PROVIDER_CHANGED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:111:5-114:8
+	android:priority
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:113:6-28
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:112:6-59
+intent-filter#action:name:com.nullsoft.winamp.metachanged
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:121:4-123:20
+action#com.nullsoft.winamp.metachanged
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:122:5-62
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:122:13-59
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:124:4-126:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:125:14-76
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:125:22-73
+intent-filter#action:name:android.provider.Telephony.WAP_PUSH_RECEIVED+data:mimeType:application/vnd.wap.mms-message
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:127:4-130:20
+action#android.provider.Telephony.WAP_PUSH_RECEIVED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:128:5-75
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:128:13-72
+intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_CHANGED+action:name:android.intent.action.PACKAGE_INSTALL+category:name:android.intent.category.DEFAULT+data:scheme:package
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:131:4-137:20
+action#android.intent.action.PACKAGE_INSTALL
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:132:15-78
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:132:23-75
+action#android.intent.action.PACKAGE_ADDED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:133:17-78
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:133:25-75
+action#android.intent.action.PACKAGE_CHANGED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:134:17-80
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:134:25-77
+receiver#org.metawatch.manager.BootCompletedReceiver
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:139:9-143:20
+	android:exported
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:139:78-101
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:139:19-77
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:140:13-142:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:141:14-75
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:141:22-73
+receiver#org.metawatch.manager.ApiIntentReceiver
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:144:9-155:20
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:144:19-73
+intent-filter#action:name:org.metawatch.manager.APPLICATION_ANNOUNCE+action:name:org.metawatch.manager.APPLICATION_START+action:name:org.metawatch.manager.APPLICATION_STOP+action:name:org.metawatch.manager.APPLICATION_UPDATE+action:name:org.metawatch.manager.NOTIFICATION+action:name:org.metawatch.manager.SILENTMODE+action:name:org.metawatch.manager.VIBRATE+action:name:org.metawatch.manager.WIDGET_UPDATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:145:13-154:29
+action#org.metawatch.manager.APPLICATION_UPDATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:146:14-80
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:146:22-77
+action#org.metawatch.manager.WIDGET_UPDATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:147:14-75
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:147:22-72
+action#org.metawatch.manager.APPLICATION_ANNOUNCE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:148:14-82
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:148:22-79
+action#org.metawatch.manager.APPLICATION_START
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:149:14-78
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:149:22-76
+action#org.metawatch.manager.APPLICATION_STOP
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:150:14-77
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:150:22-75
+action#org.metawatch.manager.NOTIFICATION
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:151:14-73
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:151:22-71
+action#org.metawatch.manager.VIBRATE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:152:14-68
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:152:22-66
+action#org.metawatch.manager.SILENTMODE
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:153:14-71
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:153:22-69
+receiver#org.metawatch.manager.AlarmReceiver
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:156:9-81
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:156:19-69
+service#org.metawatch.manager.MetaWatchService
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:157:9-82
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:157:18-71
+service#org.metawatch.manager.MetaWatchAccessibilityService
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:158:3-162:13
+	android:permission
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:158:79-145
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:158:12-78
+intent-filter#action:name:android.accessibilityservice.AccessibilityService
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:159:4-161:20
+action#android.accessibilityservice.AccessibilityService
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:160:5-80
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:160:13-77
+service#org.metawatch.manager.MetaWatchNotificationListener
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:163:3-168:13
+	android:permission
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:164:7-81
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:163:12-78
+intent-filter#action:name:android.service.notification.NotificationListenerService
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:165:7-167:23
+action#android.service.notification.NotificationListenerService
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:166:11-93
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:166:19-90
+activity#org.metawatch.manager.Settings
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:169:9-96
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:169:65-94
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:169:19-64
+activity#org.metawatch.manager.WidgetPicker
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:170:9-100
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:170:69-98
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:170:19-68
+activity#org.metawatch.manager.ThemeContainer
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:171:9-102
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:171:71-100
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:171:19-70
+activity#org.metawatch.manager.ThemeGallery
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:172:9-100
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:172:69-98
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:172:19-68
+activity#org.metawatch.manager.ThemePicker
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:173:9-99
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:173:68-97
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:173:19-67
+activity#org.metawatch.manager.Test
+ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:174:9-94
+	android:launchMode
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:174:61-92
+	android:name
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml:174:19-60
+uses-sdk
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7b99e02ab09f1a2a173824807671872e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/7b99e02ab09f1a2a173824807671872e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5b6d7cceda50f9b0a8d3fc7ba6ae5646/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/5b6d7cceda50f9b0a8d3fc7ba6ae5646/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/686b8d5dd8a63d6a16a550fe8fe8d2a8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/686b8d5dd8a63d6a16a550fe8fe8d2a8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/335f00191cd6cf0a9bc6c2dfd649e447/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/335f00191cd6cf0a9bc6c2dfd649e447/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/178836ab208ed4ae4905d529eff626bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/178836ab208ed4ae4905d529eff626bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/3a82df739b1eba7269e45f2d7f797a19/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/3a82df739b1eba7269e45f2d7f797a19/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/6ced30e53272a5e5089974645b620300/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/6ced30e53272a5e5089974645b620300/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/38b2a7681cd972e46a827bd4ab620be2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/38b2a7681cd972e46a827bd4ab620be2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5aa98b27ec6a49bfa00e87a54fc39fa3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/5aa98b27ec6a49bfa00e87a54fc39fa3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e5db35119e5eb07fac724d1dc88c753a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/e5db35119e5eb07fac724d1dc88c753a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/ae8e7c46ab43862b2d811e4c1f1b7720/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/ae8e7c46ab43862b2d811e4c1f1b7720/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d97625cbb4f452563873eaf10affeb14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/d97625cbb4f452563873eaf10affeb14/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/6d5e2b9a603327f87f2defa5ef908193/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/6d5e2b9a603327f87f2defa5ef908193/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e030deaf5a9615130cc1126dc1531112/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/e030deaf5a9615130cc1126dc1531112/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7e0757223f81c217c75f5c142859c3a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/7e0757223f81c217c75f5c142859c3a3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/de3d0419d4527877a47d791f23db6a16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/de3d0419d4527877a47d791f23db6a16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/be63fa6e4f10688c0193e8bb54a380ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/be63fa6e4f10688c0193e8bb54a380ae/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/b20d251981eaf6c6efa227b1668159d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/b20d251981eaf6c6efa227b1668159d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5740709a87206b112006e6099a8376a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/b5740709a87206b112006e6099a8376a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e08ffa89ddc5cb8e928121a8712e25c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/e08ffa89ddc5cb8e928121a8712e25c8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/cdb3f3ac5451ab309dae0fa2f2972e8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/cdb3f3ac5451ab309dae0fa2f2972e8d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b0d0597b9fd38453abaf82b9b40a93a9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/b0d0597b9fd38453abaf82b9b40a93a9/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/145520732913cb3fb75044e0331dad24/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/145520732913cb3fb75044e0331dad24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/40a82173b67f71a4372f3190b5c423e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/40a82173b67f71a4372f3190b5c423e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/38e41d0ce27c63db26faa74e3fca2ad5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/38e41d0ce27c63db26faa74e3fca2ad5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/17fe1fca4f57b983f6dd37414124938f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/17fe1fca4f57b983f6dd37414124938f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4aa831aae21d970a13c86d8d5c68133f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/4aa831aae21d970a13c86d8d5c68133f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/57c4aece400ab5396d9e817977133683/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/57c4aece400ab5396d9e817977133683/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5184cd6b1a86838dfa6b2887b7974dcb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/5184cd6b1a86838dfa6b2887b7974dcb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d5fa82a10accff2b26823f54f72d0d08/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/d5fa82a10accff2b26823f54f72d0d08/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5b453b5195f09e60fda819533a6261d0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/norguhtar/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/5b453b5195f09e60fda819533a6261d0/AndroidManifest.xml:20:5-44
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		ADDED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/norguhtar/StudioProjects/MWM-for-Android/app/src/main/AndroidManifest.xml

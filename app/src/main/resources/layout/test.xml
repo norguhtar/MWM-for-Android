@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	
+	<PreferenceCategory android:title="Notifications">
+	    <Preference android:key="calendar" android:title="Calendar (LCD/OLED)"/>
+    	<Preference android:key="notification" android:title="Notification (LCD/OLED)"/>
+    	<Preference android:key="sms" android:title="SMS (LCD/OLED)"/>
+    	<Preference android:key="sms2" android:title="SMS test wrap (LCD/OLED)"/>
+    	<Preference android:key="sms3" android:title="SMS test overflow (LCD/OLED)"/>
+    	<Preference android:key="mms" android:title="MMS (LCD/OLED)"/>
+    	<Preference android:key="k9" android:title="K9 (LCD/OLED)"/>
+    	<Preference android:key="gmail_short" android:title="Gmail Short (LCD/OLED)"/>
+    	<Preference android:key="gmail_full" android:title="Gmail Long (LCD/OLED)"/>
+    	<Preference android:key="testShortMessage" android:title="Short Message (OLED)"/>
+    	<Preference android:key="alarm" android:title="Alarm (LCD/OLED)"/>
+    	<Preference android:key="music" android:title="Music (LCD/OLED)"/>
+    	<Preference android:key="winamp" android:title="Winamp (LCD/OLED)"/>
+    	<Preference android:key="Batterylow" android:title="Battery Low (LCD/OLED)"/>
+    	<Preference android:key="timezone" android:title="Timezone Change (LCD/OLED)"/>
+    	<Preference android:key="call_start" android:title="Call Start (LCD/OLED)"/>
+    	<Preference android:key="call_start2" android:title="Call Start - unknown no. (LCD/OLED)"/>
+    	<Preference android:key="call_stop" android:title="Call Stop (LCD/OLED)"/>    
+	</PreferenceCategory>
+
+    <PreferenceCategory android:title="Location and Weather">
+       	<Preference android:key="refresh_location" android:title="Refresh Location"/>    
+    	<Preference android:key="refresh_weather" android:title="Refresh Weather"/>
+    	<Preference android:key="random_location" android:title="Set Random Location"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Time">
+    	<Preference android:key="set_rtc" android:title="Set RTC (LCD/OLED)"/>
+    	<Preference android:key="time_24hr" android:title="Set time / date formats (LCD)" android:summary="Set the watch's date and time formats to match your phone.  Note that this may cause the watch to crash on pre 0.9 versions of the firmware."/>
+		<Preference android:key="time_hands_1200" android:title="Calibrate hands to 12:00 (OLED)" android:summary="Advance hands to near 12:00."/>
+		<Preference android:key="time_hands_set" android:title="Auto set hands from 12:00 (OLED)" android:summary="Run the above option, manually set the hands to exactly 12:00, then select this one."/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Media Control">
+    	<Preference android:key="media_next" android:title="Next"/>
+    	<Preference android:key="media_previous" android:title="Previous"/>
+    	<Preference android:key="media_togglepause" android:title="Toggle Play/Pause"/> 
+	</PreferenceCategory>    
+	
+    <PreferenceCategory android:title="Apps">
+        <Preference android:key="discover_apps" android:title="Send App Discovery Message" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Misc">
+    	<Preference android:key="vibrate" android:title="Vibrate (LCD/OLED)"/>
+    	<Preference android:key="led_on" android:title="LED On (LCD)"/>
+    	<Preference android:key="led_off" android:title="LED Off (LCD)"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

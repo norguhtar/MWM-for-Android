@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	
+    <PreferenceScreen
+		android:title="@string/settings_Device"
+		>
+		<Preference
+			android:title="@string/settings_Select_Watch"
+			android:key="Discovery"
+			android:summary="@string/settings_Select_Watch_desc"
+			/>
+        
+		<EditTextPreference
+			android:title="@string/settings_Mac"
+			android:key="MAC"
+			android:summary="@string/settings_Mac_desc"
+			android:defaultValue=""
+			/>
+							
+		<CheckBoxPreference
+			android:title="@string/settings_Show_fake_watches"
+			android:key="ShowFakeWatches"
+			android:summary="@string/settings_Show_fake_watches_desc"
+			android:defaultValue="false"
+			/>
+		
+		<CheckBoxPreference
+		    android:title="@string/settings_enable_BLE"
+		    android:key="EnableBLE"
+		    android:summary="@string/settings_enable_BLE_desc"
+		    android:defaultValue="false"
+		    />	
+	</PreferenceScreen>
+	
+    <CheckBoxPreference
+		android:title="@string/settings_silent_mode"
+		android:key="SilentMode"
+		android:summary="@string/settings_silent_mode_desc"
+		android:defaultValue="false"
+		/>
+    
+	<PreferenceScreen
+		android:title="@string/settings_Notifications"
+		android:key="notifications_preference_screen"
+		>
+		<CheckBoxPreference
+			android:title="@string/settings_Call"
+			android:key="NotifyCall"
+			android:summary="@string/settings_Call_desc"
+			android:defaultValue="true"
+			/>
+		<CheckBoxPreference
+			android:title="@string/settings_SMS"
+			android:key="NotifySMS"
+			android:summary="@string/settings_SMS_desc"
+			android:defaultValue="true"
+			/>
+		<CheckBoxPreference
+			android:title="@string/settings_SMS"
+			android:key="NotifySMSAlert"
+			android:summaryOn="@string/settings_SMS_with_alert_desc_on"
+			android:summaryOff="@string/settings_SMS_with_alert_desc_off"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsSMSNumberBuzzes" 
+			android:title="@string/settings_SMS_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>
+		<CheckBoxPreference
+			android:title="@string/settings_Gmail"
+			android:key="NotifyGmail"
+			android:summary="@string/settings_Gmail_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsGmailNumberBuzzes" 
+			android:title="@string/settings_Gmail_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>			
+		<CheckBoxPreference
+			android:title="@string/settings_K9"
+			android:key="NotifyK9"
+			android:summary="@string/settings_K9_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsK9NumberBuzzes" 
+			android:title="@string/settings_K9_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>			
+ 		<CheckBoxPreference
+			android:title="@string/settings_TD"
+			android:key="NotifyTD"
+			android:summary="@string/settings_TD_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsTDNumberBuzzes" 
+			android:title="@string/settings_TD_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>			
+		<CheckBoxPreference
+			android:title="@string/settings_Alarm"
+			android:key="NotifyAlarm"
+			android:summary="@string/settings_Alarm_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsAlarmNumberBuzzes" 
+			android:title="@string/settings_Alarm_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="5"
+ 			/>			
+		<CheckBoxPreference
+			android:title="@string/settings_Music"
+			android:key="NotifyMusic"
+			android:summary="@string/settings_Music_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsMusicNumberBuzzes" 
+			android:title="@string/settings_Music_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="1"
+ 			/>			
+		<CheckBoxPreference
+			android:title="@string/settings_Calendar"
+			android:key="NotifyCalendar"
+			android:summary="@string/settings_Calendar_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsCalendarNumberBuzzes" 
+			android:title="@string/settings_Calendar_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>			
+		<CheckBoxPreference
+			android:title="@string/settings_Batterylow"
+			android:key="NotifyBatterylow"
+			android:summary="@string/settings_Batterylow_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsBatteryNumberBuzzes" 
+			android:title="@string/settings_Battery_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>			
+ 		<CheckBoxPreference
+			android:title="@string/settings_NewVoicemail"
+			android:key="NotifyNewVoicemail"
+			android:summary="@string/settings_NewVoicemail_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsVoicemailNumberBuzzes" 
+			android:title="@string/settings_NewVoicemail_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>	
+		<CheckBoxPreference
+			android:title="@string/settings_Timezonechange"
+			android:key="settingsNotifyTimezoneChange"
+			android:summary="@string/settings_Timezonechange_desc"
+			android:defaultValue="true"
+			/> 			
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsTimezoneNumberBuzzes" 
+			android:title="@string/settings_Timezonechange_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="2"
+ 			/>			
+ 		<CheckBoxPreference
+			android:title="@string/settings_NMA"
+			android:key="NotifyNMA"
+			android:summary="@string/settings_NMA_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsNMANumberBuzzes" 
+			android:title="@string/settings_NMA_Vibrate_Pattern" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="3"
+ 			/>	
+		<CheckBoxPreference
+			android:title="@string/settings_OtherNotification"
+			android:key="NotifyOtherNotification"
+			android:summary="@string/settings_OtherNotification_desc"
+			android:defaultValue="true"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_number_buzzes_names" 
+			android:entryValues="@array/settings_number_buzzes_values" 
+			android:dialogTitle="@string/settings_Number_of_buzzes_dialogtitle" 
+			android:key="settingsOtherNotificationNumberBuzzes" 
+			android:title="@string/settings_OtherNotification_Vibrate_Pattern"
+			android:summary="@string/settings_OtherNotification_Vibrate_Pattern_desc"
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="1"
+ 			/>				
+		<Preference
+			android:title="@string/settings_OtherApps"
+			android:key="otherAppsList"
+			android:summary="@string/settings_OtherApps_desc"
+			/>
+
+		<ListPreference 
+			android:entries="@array/settings_font_size_name" 
+			android:entryValues="@array/settings_font_size_value" 
+			android:dialogTitle="@string/settings_Font_Size" 
+			android:key="FontSize" 
+			android:title="@string/settings_Font_Size" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="2"
+ 			/>
+		<CheckBoxPreference
+			android:title="@string/settings_center_notification"
+			android:key="notificationCenter"
+			android:summary="@string/settings_center_notification_desc"
+			android:defaultValue="false"
+			/>
+			
+		<CheckBoxPreference
+			android:title="@string/settings_auto_light"
+			android:key="notifyLight"
+			android:summary="@string/settings_auto_light_desc"
+			android:defaultValue="false"
+			/>
+		
+		<EditTextPreference
+			android:title="@string/settings_notification_timeout"
+			android:key="notificationTimeout"
+			android:summary="@string/settings_notification_timeout_desc"
+			android:inputType="number"
+			android:defaultValue="5"
+			/>
+				
+	</PreferenceScreen>
+	
+	<PreferenceScreen
+	    android:title="@string/settings_phoneCalls"
+	    >
+	    
+	    <CheckBoxPreference
+			android:title="@string/settings_call_actions"
+			android:key="showActionsInCall"
+			android:summary="@string/settings_call_actions_desc"
+			android:defaultValue="true"
+			/>	    
+	    
+	    <CheckBoxPreference
+			android:title="@string/settings_auto_speakerphone"
+			android:key="autoSpeakerphone"
+			android:summary="@string/settings_auto_speakerphone_desc"
+			android:defaultValue="false"
+			/>
+	    
+	</PreferenceScreen>
+
+		
+ 	<PreferenceScreen
+ 		android:title="@string/settings_Analog"
+ 		>
+ 		<CheckBoxPreference
+			android:title="@string/settings_analog_pause_scroll"
+			android:key="pauseBeforeScrolling"
+			android:summary="@string/settings_analog_pause_scroll_desc"
+ 			android:defaultValue="false"
+ 			/>
+ 	</PreferenceScreen>	
+	
+	<PreferenceScreen
+		android:title="@string/settings_Digital"
+		>
+
+		<ListPreference 
+			android:entries="@array/settings_quick_button_name" 
+			android:entryValues="@array/settings_quick_button_value" 
+			android:dialogTitle="@string/settings_left_quick_button_action" 
+			android:key="QuickButtonL" 
+			android:title="@string/settings_left_quick_button_action"
+			android:summary="@string/settings_left_quick_button_action_desc"
+			android:negativeButtonText="@string/settings_CancelButton"
+ 			android:defaultValue=":launch:org.metawatch.manager.apps.MediaPlayerApp"
+ 			/>	    
+	    		
+		<ListPreference 
+			android:entries="@array/settings_quick_button_name" 
+			android:entryValues="@array/settings_quick_button_value" 
+			android:dialogTitle="@string/settings_right_quick_button_action" 
+			android:key="QuickButtonR" 
+			android:title="@string/settings_right_quick_button_action"
+			android:summary="@string/settings_right_quick_button_action_desc"
+			android:negativeButtonText="@string/settings_CancelButton"
+ 			android:defaultValue="lastNotification"
+ 			/>
+		
+		<CheckBoxPreference
+			android:title="@string/settings_sticky_notifications"
+			android:key="stickyNotifications"
+			android:summary="@string/settings_sticky_notifications_desc"
+			android:defaultValue="false"
+			android:enabled="false"
+			/>
+			
+		<EditTextPreference
+			android:title="@string/settings_sticky_notification_timeout"
+			android:key="stickyNotificationTimeout"
+			android:summary="@string/settings_sticky_notification_timeout_desc"
+			android:inputType="number"
+			android:defaultValue="120"
+			android:enabled="false"
+			/>
+
+		<CheckBoxPreference
+			android:title="@string/settings_invert_lcd"
+			android:key="InvertLCD"
+			android:summary="@string/settings_invert_lcd_desc"
+			android:defaultValue="false"
+			/>
+
+	    <CheckBoxPreference
+			android:title="@string/settings_Display_widget_row_separator"
+			android:key="DisplayWidgetRowSeparator"
+			android:summary="@string/settings_Display_widget_row_separator_desc"
+			android:defaultValue="false"
+			/>
+
+	    <CheckBoxPreference
+			android:title="@string/settings_Align_widget_row_to_bottom"
+			android:key="AlignWidgetRowToBottom"
+			android:summary="@string/settings_Align_widget_row_to_bottom_desc"
+			android:defaultValue="false"
+			/>
+
+	    <CheckBoxPreference
+			android:title="@string/settings_clock_every_page"
+			android:key="ClockOnEveryPage"
+			android:summary="@string/settings_clock_every_page_desc"
+			android:defaultValue="false"
+			android:disableDependentsState="true"
+			/>
+
+		<CheckBoxPreference
+			android:title="@string/settings_idle_app_buffer"
+			android:key="AppBufferForClocklessPages"
+			android:summary="@string/settings_idle_app_buffer_desc"
+			android:defaultValue="true"
+			android:dependency="ClockOnEveryPage"
+			/>
+		
+		<CheckBoxPreference
+		    android:title="@string/settings_apps_show_clock"
+		    android:key="ClockOnAppBuffers"
+		    android:summary="@string/settings_apps_show_clock_desc"
+		    android:defaultValue="false"
+		    />
+
+	</PreferenceScreen>	
+
+	<PreferenceScreen
+	    android:title="@string/settings_calendar_screen"
+	    >
+	    
+		<org.metawatch.manager.ListPreferenceMultiSelect android:defaultValue="#ALL#"
+		    android:key="DisplayCalendars"
+		    android:title="@string/settings_calendars_to_show" android:dialogTitle="@string/settings_calendars_to_show"
+		    android:summary="@string/settings_calendars_to_show_desc"
+		    android:entries="@array/settings_calendar_names"
+		    android:entryValues="@array/settings_calendar_values"/>
+	
+	</PreferenceScreen>
+		
+	<PreferenceScreen
+	    android:title="@string/settings_watch_widgets"
+	    >
+	    
+	    <Preference
+			android:title="@string/settings_reset_widgets"
+			android:key="ResetWidgets"
+			android:summary="@string/settings_reset_widgets_desc"
+			/>
+	    
+	    <CheckBoxPreference
+	        android:title="@string/settings_hide_empty_widgets"
+	        android:key="HideEmptyWidgets"
+	        android:summary="@string/settings_hide_empty_widgets_desc"
+	        android:defaultValue="false"
+			/>
+		
+	    <CheckBoxPreference
+	        android:title="@string/settings_hidden_widgets_reserve_space"
+	        android:key="HiddenWidgetsReserveSpace"
+	        android:summary="@string/settings_hidden_widgets_reserve_space_desc"
+	        android:defaultValue="false"
+			/>
+		
+	    <CheckBoxPreference
+			android:title="@string/settings_Display_widget_icon_on_top"
+			android:key="DisplayWidgetIconOnTop"
+			android:summary="@string/settings_Display_widget_icon_on_top_desc"
+			android:defaultValue="true"
+			/>
+	    
+	    <PreferenceScreen
+		    android:title="@string/settings_weather_widgets"
+		    >
+	
+			<ListPreference 
+				android:entries="@array/settings_weather_provider_names" 
+				android:entryValues="@array/settings_weather_provider_values" 
+				android:dialogTitle="@string/settings_weather_provider" 
+				android:key="WeatherProvider" 
+				android:title="@string/settings_weather_provider" 
+				android:negativeButtonText="@string/settings_CancelButton" 
+	 			android:enabled="true" 
+	 			android:defaultValue="1"
+	 			android:summary="@string/settings_weather_provider_desc"
+	 			/>	
+	 		<ListPreference
+	 		    android:entries="@array/settings_geolocation_names" 
+				android:entryValues="@array/settings_geolocation_values" 
+				android:title="@string/settings_weather_geolocation"
+				android:key="WeatherGeolocationMode"
+				android:summary="@string/settings_weather_geolocation_desc"
+				android:negativeButtonText="@string/settings_CancelButton" 
+	 			android:enabled="true" 
+	 			android:defaultValue="1"
+				/>
+		    <EditTextPreference
+				android:title="@string/settings_weather_location"
+				android:key="WeatherCity"
+				android:summary="@string/settings_weather_location_desc"
+				android:defaultValue="Dallas TX"
+				/>
+			<CheckBoxPreference
+				android:title="@string/settings_weather_celsius"
+				android:key="WeatherCelsius"
+				android:summary="@string/settings_weather_celsius_desc"
+				android:defaultValue="false"
+				/>
+
+			<EditTextPreference
+				android:title="@string/settings_wunderground_key"
+				android:key="WundergroundKey"
+				android:summary="@string/settings_wunderground_key_desc"
+				android:defaultValue=""
+				/>
+			<CheckBoxPreference
+				android:title="@string/settings_Overlay_weather_text"
+				android:key="OverlayWeatherText"
+				android:summary="@string/settings_Overlay_weather_text_desc"
+				android:defaultValue="true"
+				/>
+		    
+		</PreferenceScreen>
+
+		<PreferenceScreen
+		    android:title="@string/settings_calendar_widgets"
+		    >	    
+		    
+		    <EditTextPreference
+				android:title="@string/settings_calendar_lookahead" android:dialogTitle="@string/settings_calendar_lookahead"
+				android:key="CalendarLookahead"
+				android:summary="@string/settings_calendar_lookahead_desc"
+				android:inputType="number"
+				android:defaultValue="24"
+				/>
+			    
+			<CheckBoxPreference
+				android:title="@string/settings_Read_calendar_during_meeting"
+				android:key="ReadCalendarDuringMeeting"
+				android:summary="@string/settings_Read_calendar_during_meeting_desc"
+				android:defaultValue="true"
+				/>
+			<EditTextPreference
+				android:title="@string/settings_Read_calendar_min_duration_to_meeting_end"
+				android:key="ReadCalendarMinDurationToMeetingEnd"
+				android:summary="@string/settings_Read_calendar_min_duration_to_meeting_end_desc"
+				android:inputType="number"
+				android:defaultValue="15"
+				/>
+			<CheckBoxPreference
+				android:title="@string/settings_Display_location_in_small_calendar_widget"
+				android:key="DisplayLocationInSmallCalendarWidget"
+				android:summary="@string/settings_Display_location_in_small_calendar_widget_desc"
+				android:defaultValue="false"
+				/>
+			<CheckBoxPreference
+				android:title="@string/settings_Event_date_in_calendar_widget"
+				android:key="EventDateInCalendarWidget"
+				android:summary="@string/settings_Event_date_in_calendar_widget_desc"
+				android:defaultValue="false"
+				/>
+		</PreferenceScreen>
+			    
+	</PreferenceScreen>
+	
+	<PreferenceScreen
+	    android:title="@string/settings_watch_apps"
+	    android:key="WatchAppsScreen"
+	    >
+	    
+	    <ListPreference 
+			android:entries="@array/settings_app_launch_mode_name" 
+			android:entryValues="@array/settings_app_launch_mode_value" 
+			android:dialogTitle="@string/settings_app_launch_mode" 
+			android:key="AppLaunchMode" 
+			android:title="@string/settings_app_launch_mode" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="false" 
+ 			android:defaultValue="0"
+ 			/>
+
+		<ListPreference 
+			android:entries="@array/settings_media_control_method_names" 
+			android:entryValues="@array/settings_media_control_method_values" 
+			android:dialogTitle="@string/settings_media_control_method" 
+			android:key="IdleMusicControlMethod" 
+			android:title="@string/settings_media_control_method" 
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="0"
+ 			/>	
+		
+		<CheckBoxPreference
+			android:title="@string/settings_Inverse_Media_Player_Buttons"
+			android:key="InverseMediaPlayerButtons"
+			android:summary="@string/settings_Inverse_Media_Player_Buttons_desc"
+			android:defaultValue="false"
+			/>
+		
+		<PreferenceCategory
+		    android:title="@string/settings_active_apps"
+		    android:key="ActiveApps">
+		
+		    <!-- This category gets filled by code in Settings.java -->
+		    
+		</PreferenceCategory>
+	    			    
+	</PreferenceScreen>
+
+	
+	<Preference
+		android:title="@string/settings_choose_theme"
+		android:key="Theme"
+		android:summary="@string/settings_choose_theme_desc"
+		/>
+	
+	<PreferenceScreen
+		android:title="@string/settings_Other"
+		>
+		
+		<EditTextPreference
+			android:title="@string/settings_packet_wait"
+			android:key="PacketWait"
+			android:summary="@string/settings_packet_wait_desc"
+			android:inputType="number"
+			android:defaultValue="30"
+			android:enabled="false"
+			/>
+		<CheckBoxPreference
+			android:title="@string/settings_hide_notification_icon"
+			android:key="HideNotificationIcon"
+			android:summary="@string/settings_hide_notification_icon_desc"
+			android:defaultValue="false"
+			/>
+		<CheckBoxPreference
+			android:title="@string/settings_skip_sdp"
+			android:key="SkipSDP"
+			android:summary="@string/settings_skip_sdp_desc"
+			android:defaultValue="false"
+			/>
+		<CheckBoxPreference
+		    android:title="@string/settings_insecure_bluetooth"
+		    android:key="InsecureBtSocket"
+		    android:summary="@string/settings_insecure_bluetooth_desc"
+		    android:defaultValue="false"
+		    />
+		<CheckBoxPreference
+			android:title="@string/settings_debug_logging"
+			android:key="logging"
+			android:summary="@string/settings_debug_logging_desc"
+			android:defaultValue="true"
+			/>
+		<CheckBoxPreference
+			android:title="@string/settings_log_packets"
+			android:key="logPacketDetails"
+			android:summary="@string/settings_log_packets_desc"
+			android:defaultValue="false"
+			/>
+		<EditTextPreference
+			android:title="@string/settings_sms_freq"
+			android:key="SmsLoopInterval"
+			android:summary="@string/settings_sms_freq_desc"
+			android:inputType="number"
+			android:defaultValue="15"
+			/>
+		<ListPreference 
+			android:entries="@array/settings_collect_voltage_names" 
+			android:entryValues="@array/settings_collect_voltage_values" 
+			android:dialogTitle="@string/settings_watch_voltage_freq" 
+			android:key="collectWatchVoltage" 
+			android:title="@string/settings_watch_voltage" 
+			android:summary="@string/settings_watch_voltage_desc"
+			android:negativeButtonText="@string/settings_CancelButton" 
+ 			android:enabled="true" 
+ 			android:defaultValue="0"
+            />
+ 		<CheckBoxPreference
+			android:title="@string/settings_auto_connect"
+			android:key="AutoConnect"
+			android:summary="@string/settings_auto_connect_desc"
+			android:defaultValue="false"
+			/>					
+        <!--<CheckBoxPreference
+            android:title="@string/settings_notify_on_connect"
+            android:key="NotifyWatchOnConnect"
+            android:summary="@string/settings_notify_on_connect_desc"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+            android:title="@string/settings_display_splash"
+            android:key="DisplaySplashScreen"
+            android:summary="@string/settings_display_splash_desc"
+            android:defaultValue="false"
+            />
+        <CheckBoxPreference
+			android:title="@string/settings_restart_if_stalled"
+			android:key="AutoRestart"
+			android:summary="@string/settings_restart_if_stalled_desc"
+			android:defaultValue="false"
+			/>-->
+		<CheckBoxPreference
+			android:title="@string/settings_haptic_feedback"
+			android:key="HapticFeedback"
+			android:summary="@string/settings_haptic_feedback_desc"
+			android:defaultValue="false"
+			/>	
+		<!-- RM: disabled for now, confuses firmware!
+		<CheckBoxPreference
+		    android:title="@string/settings_auto_clock_format"
+		    android:key="AutoClockFormat"
+		    android:summary="@string/settings_auto_clock_format_desc"
+		    android:defaultValue="false"
+		    />   -->
+			
+		<CheckBoxPreference
+		    android:title="@string/settings_notification_queue"
+		    android:key="ShowNotificationQueue"
+		    android:summary="@string/settings_notification_queue_desc"
+		    android:defaultValue="false"
+		    />
+		    
+		<CheckBoxPreference
+			android:title="@string/settings_screenshots"
+			android:key="DumpWatchScreenshots"
+			android:summary="@string/settings_screenshots_desc"
+			android:defaultValue="false"
+		    />			
+		    
+		<CheckBoxPreference
+		    android:title="@string/settings_test_widgets"
+		    android:key="TestWidgets"
+		    android:summary="@string/settings_test_widgets_desc"
+		    android:defaultValue="false"
+		    />
+	</PreferenceScreen>	
+	
+	<PreferenceScreen
+		android:title="@string/settings_backup"
+		>
+		
+		<Preference
+			android:title="@string/settings_backup_backup"
+			android:key="Backup"
+			android:summary="@string/settings_backup_backup_desc"
+			/>
+		<Preference
+			android:title="@string/settings_backup_restore"
+			android:key="Restore"
+			android:summary="@string/settings_backup_restore_desc"
+			/>
+	</PreferenceScreen>
+	
+	<Preference
+		android:title="@string/settings_about"
+		android:key="About"
+		/>
+
+	<Preference
+		android:title="@string/settings_exit"
+		android:key="Exit"
+		/>
+	
+</PreferenceScreen>
+
+
+
